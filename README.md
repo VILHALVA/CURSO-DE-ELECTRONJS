@@ -2,15 +2,9 @@
 👨‍⚖️O ELECTRONJS É UM FRAMEWORK DE CÓDIGO ABERTO QUE PERMITE CRIAR APLICATIVOS DE DESKTOP MULTIPLATAFORMA USANDO TECNOLOGIAS WEB COMO HTML, CSS E JAVASCRIPT. ELE PERMITE QUE OS DESENVOLVEDORES CRIEM APLICATIVOS PARA WINDOWS, MACOS E LINUX USANDO AS MESMAS HABILIDADES DE DESENVOLVIMENTO WEB.
 
 [![GitHub Repo stars](https://img.shields.io/badge/VILHALVA-GITHUB-03A9F4?logo=github)](https://github.com/VILHALVA)
-[![GitHub Repo stars](https://img.shields.io/badge/VEJA%20OS-VIDEOS-03A9F4?logo=youtube)](https://www.youtube.com/@vilhalva100/search?query=ELECTRONJS) 
 [![GitHub Repo stars](https://img.shields.io/badge/VEJA-DOCUMENTAÇÃO-03A9F4?logo=google)](https://www.electronjs.org/docs/latest) 
-[![GitHub Repo stars](https://img.shields.io/badge/LINGUAGEM%20DE-PROGRAMAÇÃO-03A9F4?logo=github)](https://github.com/VILHALVA/CURSO-DE-JAVASCRIPT) <br>
-
+[![GitHub Repo stars](https://img.shields.io/badge/LINGUAGEM%20DE-PROGRAMAÇÃO-03A9F4?logo=github)](https://github.com/VILHALVA/CURSO-DE-JAVASCRIPT) 
 [![GitHub Repo stars](https://img.shields.io/badge/-PLAYLIST%20DO%20YOUTUBE-blueviolet)](https://youtube.com/playlist?list=PLWhiA_CuQkbCqT946EXFbvMQhK3oMpCsR&si=tY3L3RFl-mQJK6sn)
-
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Electron_Software_Framework_Logo.svg/2048px-Electron_Software_Framework_Logo.svg.png" width="280"> <br>
-
-![](https://i.imgur.com/waxVImv.png)
 
 # CONCEITO:
 O Electron é uma estrutura de código aberto que permite criar aplicativos desktop multiplataforma usando tecnologias da web, como HTML, CSS e JavaScript. Ele é amplamente utilizado para desenvolver aplicativos de desktop para Windows, macOS e Linux. Vou explicar alguns conceitos básicos e fornecer exemplos de código para ajudá-lo a entender melhor como o Electron funciona.

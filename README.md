@@ -1,15 +1,11 @@
 # CURSO DE ELECTRONJS
 👨‍⚖️O ELECTRONJS É UM FRAMEWORK DE CÓDIGO ABERTO QUE PERMITE CRIAR APLICATIVOS DE DESKTOP MULTIPLATAFORMA USANDO TECNOLOGIAS WEB COMO HTML, CSS E JAVASCRIPT. ELE PERMITE QUE OS DESENVOLVEDORES CRIEM APLICATIVOS PARA WINDOWS, MACOS E LINUX USANDO AS MESMAS HABILIDADES DE DESENVOLVIMENTO WEB.
 
-[![GitHub Repo stars](https://img.shields.io/badge/VILHALVA-GITHUB-03A9F4?logo=github)](https://github.com/VILHALVA)
-[![GitHub Repo stars](https://img.shields.io/badge/VEJA-DOCUMENTAÇÃO-03A9F4?logo=google)](https://www.electronjs.org/docs/latest) 
-[![GitHub Repo stars](https://img.shields.io/badge/LINGUAGEM%20DE-PROGRAMAÇÃO-03A9F4?logo=github)](https://github.com/VILHALVA/CURSO-DE-JAVASCRIPT) 
-[![GitHub Repo stars](https://img.shields.io/badge/-PLAYLIST%20DO%20YOUTUBE-blueviolet)](https://youtube.com/playlist?list=PLWhiA_CuQkbCqT946EXFbvMQhK3oMpCsR&si=tY3L3RFl-mQJK6sn)
+<img src="FOTO.png" align="center" width="400"> <br>
 
-# CONCEITO:
+## CONCEITO:
 O Electron é uma estrutura de código aberto que permite criar aplicativos desktop multiplataforma usando tecnologias da web, como HTML, CSS e JavaScript. Ele é amplamente utilizado para desenvolver aplicativos de desktop para Windows, macOS e Linux. Vou explicar alguns conceitos básicos e fornecer exemplos de código para ajudá-lo a entender melhor como o Electron funciona.
 
-## Conceitos Básicos:
 1. **Main Process e Renderer Process:**
    O Electron tem dois processos principais: o processo principal (main process) e os processos de renderização (renderer process). O processo principal é responsável por criar a janela do aplicativo e gerenciar eventos de sistema, enquanto os processos de renderização são usados para exibir o conteúdo da interface do usuário.
 
@@ -25,7 +21,7 @@ O Electron é uma estrutura de código aberto que permite criar aplicativos desk
 5. **Package.json:**
    O arquivo `package.json` é fundamental em um projeto Electron. Ele descreve as dependências do aplicativo e configurações importantes, como o arquivo principal (main), que define o processo principal do aplicativo.
 
-## Exemplo de Código:
+## EXEMPLOS:
 Aqui está um exemplo simples de como criar uma janela do Electron:
 
 **package.json:**
@@ -71,8 +67,8 @@ Neste exemplo, o arquivo `main.js` cria uma janela do Electron e carrega o conte
 
 À medida que você avança no curso, aprenderá a interagir com recursos avançados do sistema operacional, criar menus, lidar com eventos e muito mais. 
 
-# CARACTERISTICAS:
-## Características Positivas:
+## CARACTERISTICAS:
+### POSITIVAS:
 1. **Multiplataforma:** Um dos principais benefícios do Electron é a capacidade de criar aplicativos desktop para Windows, macOS e Linux usando uma única base de código.
 
 2. **Desenvolvimento Web:** Desenvolver aplicativos com Electron é acessível para desenvolvedores web, pois permite usar tecnologias da web comuns, como HTML, CSS e JavaScript.
@@ -85,7 +81,7 @@ Neste exemplo, o arquivo `main.js` cria uma janela do Electron e carrega o conte
 
 6. **Acesso a APIs de Sistema:** O Electron oferece APIs para acessar recursos de sistema, como câmera, áudio, sistema de arquivos, janelas de sistema, e outras funcionalidades de nível de desktop.
 
-## Características Negativas:
+### NEGATIVAS:
 1. **Consumo de Recursos:** Aplicativos Electron tendem a consumir mais memória e recursos do sistema em comparação com aplicativos nativos, já que estão executando um navegador embutido.
 
 2. **Tamanho do Aplicativo:** Os aplicativos Electron podem ser relativamente grandes em tamanho, o que pode ser um problema se a largura de banda for limitada.
@@ -97,4 +93,10 @@ Neste exemplo, o arquivo `main.js` cria uma janela do Electron e carrega o conte
 5. **Manutenção Contínua:** Você deve acompanhar as atualizações do Electron e suas dependências para garantir a segurança e a compatibilidade com sistemas operacionais.
 
 6. **Experiência do Usuário:** O estilo visual e a experiência do usuário podem ser diferentes da plataforma nativa, o que pode afetar a aceitação dos usuários.
+
+## SUBSIDIOS:
+- [CURSO CRIADO PELO "FILIPE MORELLI DEVELOPER"](https://youtube.com/playlist?list=PLWhiA_CuQkbCqT946EXFbvMQhK3oMpCsR&si=tY3L3RFl-mQJK6sn)
+- [CURSO FEITO PELO VILHALVA](https://github.com/VILHALVA)
+- [VEJA A DOCUMENTAÇÃO](https://www.electronjs.org/docs/latest)
+- [LINGUAGEM DE PROGRAMAÇÃO](https://github.com/VILHALVA/CURSO-DE-JAVASCRIPT)
 

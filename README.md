@@ -21,51 +21,18 @@ O Electron é uma estrutura de código aberto que permite criar aplicativos desk
 5. **Package.json:**
    O arquivo `package.json` é fundamental em um projeto Electron. Ele descreve as dependências do aplicativo e configurações importantes, como o arquivo principal (main), que define o processo principal do aplicativo.
 
-## EXEMPLOS:
-Aqui está um exemplo simples de como criar uma janela do Electron:
+## SUA HISTÓRIA:
+1. **Origens (2013)**:
+   - O ElectronJS teve suas origens no projeto Atom Shell, uma iniciativa iniciada por Cheng Zhao da GitHub Inc. em 2013.
+   - O objetivo inicial era criar uma plataforma para desenvolver o editor de código Atom de forma mais eficiente e para possibilitar a criação de aplicativos desktop com tecnologias web.
 
-**package.json:**
-```json
-{
-  "name": "my-electron-app",
-  "version": "1.0.0",
-  "main": "main.js",
-  "scripts": {
-    "start": "electron ."
-  },
-  "dependencies": {
-    "electron": "^16.0.0"
-  }
-}
-```
+2. **Lançamento Público (2014)**:
+   - Em 2014, o Electron foi lançado publicamente como um projeto de código aberto pela GitHub Inc.
+   - A ideia principal era permitir que desenvolvedores criassem aplicativos desktop usando HTML, CSS e JavaScript, tecnologias familiares para desenvolvimento web, e distribuíssem esses aplicativos para várias plataformas desktop.
 
-**main.js:**
-```javascript
-const { app, BrowserWindow } = require('electron');
-
-app.on('ready', () => {
-  const mainWindow = new BrowserWindow({ width: 800, height: 600 });
-
-  mainWindow.loadFile('index.html');
-});
-```
-
-**index.html:**
-```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Meu App Electron</title>
-  </head>
-  <body>
-    <h1>Olá, Mundo!</h1>
-  </body>
-</html>
-```
-
-Neste exemplo, o arquivo `main.js` cria uma janela do Electron e carrega o conteúdo da página da web a partir de `index.html`.
-
-À medida que você avança no curso, aprenderá a interagir com recursos avançados do sistema operacional, criar menus, lidar com eventos e muito mais. 
+3. **Rápida Adoção (2015-presente)**:
+   - Desde o seu lançamento público, o Electron ganhou rapidamente popularidade entre os desenvolvedores devido à sua facilidade de uso, flexibilidade e capacidade de criar aplicativos desktop de alta qualidade.
+   - Empresas como Slack, Discord, Microsoft (com Visual Studio Code) e muitas outras adotaram o Electron para seus aplicativos desktop.
 
 ## CARACTERISTICAS:
 ### POSITIVAS:
@@ -99,4 +66,5 @@ Neste exemplo, o arquivo `main.js` cria uma janela do Electron e carrega o conte
 - [CURSO FEITO PELO VILHALVA](https://github.com/VILHALVA)
 - [VEJA A DOCUMENTAÇÃO](https://www.electronjs.org/docs/latest)
 - [LINGUAGEM DE PROGRAMAÇÃO](https://github.com/VILHALVA/CURSO-DE-JAVASCRIPT)
+- [VEJA A SINTAXE](./SINTAXE.md)
 

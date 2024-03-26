@@ -67,4 +67,5 @@ O Electron é uma estrutura de código aberto que permite criar aplicativos desk
 - [VEJA A DOCUMENTAÇÃO](https://www.electronjs.org/docs/latest)
 - [LINGUAGEM DE PROGRAMAÇÃO](https://github.com/VILHALVA/CURSO-DE-JAVASCRIPT)
 - [VEJA A SINTAXE](./SINTAXE.md)
+- [VEJA OS PROJETOS](https://github.com/VILHALVA?tab=repositories&q=topic:ELECTRONJS)
 

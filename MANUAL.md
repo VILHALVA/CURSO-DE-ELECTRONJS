@@ -153,7 +153,68 @@ Para converter seu projeto ElectronJS em um aplicativo executável ou instalador
    }
    ```
 
-   No campo `build`, você pode ajustar as configurações de acordo com suas necessidades, incluindo `appId`, `productName`, `directories`, e os alvos de build para diferentes plataformas.
+   No campo `build`, você pode ajustar as configurações de acordo com suas necessidades, incluindo `appId`, `productName`, `directories`, e os alvos de build para diferentes plataformas. Seu `package.json` se tornará semelhante a esse:
+   ```json
+  {
+  "name": "codigo",
+  "productName": "codigo",
+  "version": "1.0.0",
+  "description": "My Electron application description",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "echo \"No linting configured\"",
+    "build": "electron-builder"
+  },
+  "build": {
+    "appId": "com.example.my-electron-app",
+    "productName": "MyElectronApp",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "src/**/*",
+      "package.json"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "ico/HTML.ico"
+    },
+    "mac": {
+      "target": "dmg",
+      "icon": "ico/HTML.ico"
+    },
+    "linux": {
+      "target": "AppImage",
+      "icon": "ico/HTML.ico"
+    }
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^7.4.0",
+    "@electron-forge/maker-deb": "^7.4.0",
+    "@electron-forge/maker-rpm": "^7.4.0",
+    "@electron-forge/maker-squirrel": "^7.4.0",
+    "@electron-forge/maker-zip": "^7.4.0",
+    "@electron-forge/plugin-auto-unpack-natives": "^7.4.0",
+    "@electron-forge/plugin-fuses": "^7.4.0",
+    "@electron/fuses": "^1.8.0",
+    "electron": "31.0.1",
+    "electron-builder": "^24.13.3"
+  },
+  "keywords": [],
+  "author": {
+    "name": "VILHALVA",
+    "email": "107000099+VILHALVA@users.noreply.github.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.1"
+    }
+  }
+  ```
 
 3. **Rodar o Build**:
    Execute o comando de build para gerar os executáveis e instaladores.
@@ -197,6 +258,72 @@ Para Linux, o alvo `AppImage` é bastante popular.
 
 ### PERSONALIZAÇÃO ADICIONAL:
 Você pode personalizar ainda mais o processo de build com várias opções disponíveis no `electron-builder`. Consulte a [documentação oficial](https://www.electron.build/) para uma lista completa de opções e exemplos avançados.
+
+## SOBRE O ICONE:
+Para criar instaladores e executáveis para sua aplicação Electron, é essencial ter ícones em formatos e tamanhos específicos para garantir que eles sejam exibidos corretamente em diferentes plataformas. 
+
+### REQUISITOS DE ÍCONE POR PLATAFORMA:
+#### WINDOWS:
+- **Formato**: `.ico`
+- **Tamanho**: Deve incluir múltiplos tamanhos dentro do arquivo `.ico`, mas o tamanho mínimo requerido é 256x256 pixels.
+- **Melhores Práticas**:
+  - O arquivo `.ico` deve conter várias resoluções: 16x16, 32x32, 48x48, 64x64, 128x128, e 256x256.
+  - Utilize uma ferramenta como [RealWorld Icon Editor](http://www.rw-designer.com/online_icon_maker) ou [IcoFX](https://icofx.ro/) para criar ícones `.ico` com múltiplas resoluções.
+
+#### MACOS:
+- **Formato**: `.icns`
+- **Tamanho**: Deve incluir múltiplos tamanhos dentro do arquivo `.icns`, com o maior sendo 512x512 pixels (ou 1024x1024 para suportar alta resolução Retina).
+- **Melhores Práticas**:
+  - Utilize ferramentas como [Icon Slate](https://www.kodlian.com/apps/icon-slate) ou o comando `iconutil` no macOS para converter um conjunto de imagens PNG em um arquivo `.icns`.
+
+#### LINUX:
+- **Formato**: `.png` ou vetor (`.svg`), embora `.png` seja mais comum.
+- **Tamanho**: Múltiplos tamanhos podem ser especificados, mas 256x256 pixels é um tamanho comum.
+- **Melhores Práticas**:
+  - Forneça ícones em diferentes tamanhos: 16x16, 32x32, 48x48, 64x64, 128x128, 256x256, e 512x512.
+  - Use ferramentas como GIMP ou Inkscape para criar e redimensionar ícones.
+
+### CRIANDO ÍCONES APROPRIADOS:
+#### FERRAMENTAS PARA CRIAR ÍCONES:
+1. **RealWorld Icon Editor**:
+   - Pode criar arquivos `.ico` com múltiplas resoluções.
+   - [RealWorld Icon Editor](http://www.rw-designer.com/online_icon_maker)
+
+2. **IcoFX**:
+   - Ferramenta paga para criar e editar ícones.
+   - [IcoFX](https://icofx.ro/)
+
+3. **Icon Slate** (para macOS):
+   - Pode criar arquivos `.icns` e outros formatos.
+   - [Icon Slate](https://www.kodlian.com/apps/icon-slate)
+
+4. **GIMP**:
+   - Editor de imagens gratuito que pode ser usado para criar ícones PNG.
+   - [GIMP](https://www.gimp.org/)
+
+5. **Inkscape**:
+   - Editor de gráficos vetoriais que pode ser usado para criar ícones SVG.
+   - [Inkscape](https://inkscape.org/)
+
+#### PASSO A PASSO PARA CRIAR UM ÍCONE `.ICO` COM MÚLTIPLAS RESOLUÇÕES:
+1. **Criar Imagens PNG em Diferentes Resoluções**:
+   - Crie imagens PNG nas resoluções: 16x16, 32x32, 48x48, 64x64, 128x128, e 256x256.
+
+2. **Usar um Editor de Ícones**:
+   - Abra o RealWorld Icon Editor.
+   - Importe cada PNG para adicionar diferentes resoluções ao ícone.
+   - Exporte o arquivo como `.ico`.
+
+3. **Configurar o Caminho do Ícone no `package.json`**:
+
+   Certifique-se de que o caminho do ícone está correto no campo `build` do `package.json`.
+
+   ```json
+   "win": {
+     "target": "nsis",
+     "icon": "src/assets/icons/icon.ico"
+   }
+   ```
 
 ## CONCLUSÃO:
 Agora você instalou o Electron e criou um novo projeto ElectronJS. A partir daqui, você pode explorar mais sobre o desenvolvimento de aplicativos de desktop usando tecnologias da web e personalizar seu projeto conforme necessário.

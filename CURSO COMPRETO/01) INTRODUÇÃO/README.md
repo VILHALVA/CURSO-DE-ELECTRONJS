@@ -147,31 +147,3 @@ Aqui estão as etapas para criar esses arquivos e pastas manualmente:
 
 Agora, com esses arquivos e diretórios criados, sua estrutura de projeto estará mais completa. Você pode executar o aplicativo Electron com `npm start`, e ele deve abrir uma janela exibindo "Olá, Mundo!". Certifique-se de que a estrutura de pastas e arquivos esteja organizada da maneira correta para que o Electron possa localizá-los.
 
-## ERRO MUITO COMUM:
-O erro "ERR_FILE_NOT_FOUND" indica que o arquivo não foi encontrado no caminho especificado.
-
-Para resolver esse problema, siga estas etapas:
-
-1. Certifique-se de que o arquivo `index.html` existe no diretório `renderer` do seu projeto. Além disso, verifique se ele está na mesma pasta do arquivo `main.js`. A estrutura do seu projeto deve se parecer com isto:
-
-```
-meu-aplicativo-electron/
-  ├── package.json
-  ├── main.js
-  ├── renderer/
-  │     ├── index.html
-  │     └── style.css
-  └── node_modules/
-```
-
-2. Verifique se o nome do arquivo `index.html` e a pasta `renderer` estão em letras minúsculas, uma vez que o Electron é sensível a maiúsculas e minúsculas no sistema de arquivos.
-
-3. Certifique-se de que não haja erros de digitação no caminho do arquivo `index.html` dentro do seu arquivo `main.js`. O caminho deve ser relativo ao diretório atual. O código no `main.js` que carrega a janela deve ser assim:
-
-```javascript
-win.loadFile('renderer/index.html');
-```
-
-4. Certifique-se de que o arquivo `index.html` contenha o código HTML adequado.
-
-Depois de verificar e corrigir esses pontos, execute `npm start` novamente no diretório raiz do seu projeto. O Electron deve abrir a janela e carregar corretamente o arquivo `index.html` a partir da pasta `renderer`. Certifique-se de que a estrutura de diretórios e os nomes de arquivos estejam todos corretos.

@@ -62,7 +62,7 @@ O Electron é uma estrutura de código aberto que permite criar aplicativos desk
 6. **Experiência do Usuário:** O estilo visual e a experiência do usuário podem ser diferentes da plataforma nativa, o que pode afetar a aceitação dos usuários.
 
 ## SUBSIDIOS:
-- [CURSO CRIADO PELO "FILIPE MORELLI DEVELOPER"](https://youtube.com/playlist?list=PLWhiA_CuQkbCqT946EXFbvMQhK3oMpCsR&si=tY3L3RFl-mQJK6sn)
+- [CURSO CRIADO PELO "FHERNANDEZPALAFOX"](https://github.com/fhernandezpalafox/Curso-ElectronJS-2020)
 - [CURSO FEITO PELO VILHALVA](https://github.com/VILHALVA)
 - [VEJA A DOCUMENTAÇÃO](https://www.electronjs.org/docs/latest)
 - [LINGUAGEM DE PROGRAMAÇÃO](https://github.com/VILHALVA/CURSO-DE-JAVASCRIPT)

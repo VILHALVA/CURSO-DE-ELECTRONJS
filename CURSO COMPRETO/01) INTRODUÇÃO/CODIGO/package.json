@@ -1,12 +1,22 @@
 {
-  "name": "meu-aplicativo-electron",
+  "name": "app1",
   "version": "1.0.0",
-  "description": "Uma descrição do seu aplicativo",
-  "main": "main.js",
+  "description": "App1 usando ElectronJS",
+  "main": "app.js",
   "scripts": {
-    "start": "electron ."
+    "dev": "electron app.js",
+    "start": "electron app1.js"
   },
-  "dependencies": {
-    "electron": "^16.0.0"
+  "keywords": [
+    "electron",
+    "nodejs",
+    "html",
+    "css",
+    "js"
+  ],
+  "author": "Felipe Hernandez Palafox",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^20.0.3"
   }
 }

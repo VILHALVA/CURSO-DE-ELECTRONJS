@@ -1,0 +1,17 @@
+.DS_Store
+/app1/node_modules
+/app2/node_modules
+/app3-bootstrap/node_modules
+/app4-formulario-fs/node_modules
+/app5-nodeintegration/node_modules
+/app6-cliente-servidor/node_modules
+/app7-ipcmain-ipcrenderer/node_modules
+/app8-dialogos/node_modules
+/app9-notificaciones/node_modules
+/app10-camara-foto/node_modules
+/app10-grabar-pantalla/node_modules
+/app11-menu/node_modules
+/app12-PhotonKit/node_modules
+/app13-WebView/node_modules
+/app14-SystemTray/node_modules
+/app15-Shortcuts/node_modules

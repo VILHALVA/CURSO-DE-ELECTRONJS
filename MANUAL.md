@@ -154,7 +154,7 @@ Para converter seu projeto ElectronJS em um aplicativo executável ou instalador
    ```
 
    No campo `build`, você pode ajustar as configurações de acordo com suas necessidades, incluindo `appId`, `productName`, `directories`, e os alvos de build para diferentes plataformas. Seu `package.json` se tornará semelhante a esse:
-   ```json
+```json
   {
   "name": "codigo",
   "productName": "codigo",
@@ -214,7 +214,7 @@ Para converter seu projeto ElectronJS em um aplicativo executável ou instalador
     "electron-squirrel-startup": "^1.0.1"
     }
   }
-  ```
+   ```
 
 3. **Rodar o Build**:
    Execute o comando de build para gerar os executáveis e instaladores.
